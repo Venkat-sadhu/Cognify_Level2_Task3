@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption/Decryption Tool</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>File Encryptor / Decryptor</h2>
+        <p class="subtitle">Select an operation and upload a .txt file to process.</p>
+
+        <div class="control-group">
+            <label>Select Operation:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="operation" value="encrypt" checked> 
+                    Encrypt
+                </label>
+                <label>
+                    <input type="radio" name="operation" value="decrypt"> 
+                    Decrypt
+                </label>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="fileInput">Select File (Text files only):</label>
+            <input type="file" id="fileInput" accept=".txt">
+        </div>
+
+        <button id="processBtn">Process File</button>
+
+        <div id="statusMessage" class="status-box"></div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
